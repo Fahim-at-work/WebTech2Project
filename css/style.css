@@ -19,3 +19,237 @@
     background: #00548B;
     border-radius: 10px;
 }
+
+
+/* navigation bar for all width */
+
+.main-header {
+    position: fixed;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    margin: 15px 10px;
+    display: block;
+    font-size: 12px;
+    color: #00548B;
+    text-decoration: none;
+    border: 1px solid #00548B;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-property: color, background;
+    transition-duration: 1s;
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: 1s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffffff;
+    background: #00548B;
+    border: 1px solid #00548B;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* main logo */
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+
+/* for mobile menu */
+
+.toggle {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: right;
+    display: none;
+}
+
+.toggle span {
+    cursor: pointer;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.burger-patty {
+    width: 30px;
+    height: 5px;
+    background: #00548B;
+    margin: 5px;
+}
+
+
+/* parallax section */
+
+.parallax {
+    background-image: url("../img/main-img.jpg");
+    height: 650px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-heading {
+    font-size: 60px;
+    font-variant: small-caps;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    padding: 300px 0;
+}
+
+div h1 span {
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.7s ease;
+    transform: translateY(50px);
+}
+
+.fades {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.header-style {
+    color: #00548B;
+    font-variant: small-caps;
+}
+
+.text {
+    font-size: 15px;
+    color: #444;
+    text-align: justify;
+}
+
+.know-more {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: 1px solid #00ADE5;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    background: #00ADE5;
+    transition-property: background;
+    transition-duration: 1s;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 1s;
+}
+
+.know-more:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: #00548B;
+    border: 1px solid #00548B;
+    cursor: pointer;
+}
+
+.img-bg {
+    -webkit-box-shadow: 20px -20px 0px 0px rgba(0, 84, 139, 1);
+    -moz-box-shadow: 20px -20px 0px 0px rgba(0, 84, 139, 1);
+    box-shadow: 20px -20px 0px 0px rgba(0, 84, 139, 1);
+    width: 100%;
+    height: auto;
+}
+
+.img-bg-rev {
+    -webkit-box-shadow: -20px 20px 0px 0px rgba(0, 84, 139, 1);
+    -moz-box-shadow: -20px 20px 0px 0px rgba(0, 84, 139, 1);
+    box-shadow: -20px 20px 0px 0px rgba(0, 84, 139, 1);
+    width: 100%;
+    height: auto;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.footer {
+    background: #f1f1f1;
+    padding: 30px 0;
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-links li {
+    padding-bottom: 2px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+
+.footer-links li a:hover {
+    color: #00548B;
+}
+
+@media (max-width: 767px) {
+    /* main header */
+    .toggle {
+        display: block;
+    }
+    nav {
+        padding: 0;
+    }
+    nav ul {
+        text-align: center;
+        display: none;
+    }
+    nav ul.active {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        border: none;
+        margin: 0;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+        border: none;
+    }
+    .logo img {
+        margin: 23px;
+    }
+    .image-heading {
+        font-size: 30px;
+    }
+}
