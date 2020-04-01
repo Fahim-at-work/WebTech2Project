@@ -2602,7 +2602,7 @@
                 iconUrl: "marker-icon.png",
                 iconRetinaUrl: "marker-icon-2x.png",
                 shadowUrl: "marker-shadow.png",
-                iconSize: [25, 41],
+                iconSize: [75, 75],
                 iconAnchor: [12, 41],
                 popupAnchor: [1, -34],
                 tooltipAnchor: [16, -28],
@@ -3740,7 +3740,8 @@
                             if ((i = this._tiles[t]).current && !i.active) {
                                 var n = i.coords;
                                 this._retainParent(n.x, n.y, n.z, n.z - 5) || this._retainChildren(n.x, n.y, n.z, n.z + 2)
-                            } for (t in this._tiles) this._tiles[t].retain || this._removeTile(t)
+                            }
+                        for (t in this._tiles) this._tiles[t].retain || this._removeTile(t)
                     }
                 }
             },
