@@ -2600,7 +2600,7 @@
         Xe = Ye.extend({
             options: {
                 iconUrl: "marker-icon.png",
-                iconRetinaUrl: "marker-icon-2x.png",
+                iconRetinaUrl: "marker-icon.png",
                 shadowUrl: "marker-shadow.png",
                 iconSize: [75, 75],
                 iconAnchor: [12, 41],
