@@ -39,60 +39,108 @@
 
 
     <div class="container">
-        <div class="row"></div>
-    </div>
 
 
 
+        <div class="row">
+            <div class="col-sm-12 mt-100">
+                <div class="tabs">
 
-    <div class="footer mt-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4 class="header-style">Lambton College</h4>
-                    <p class="text mt-20 mb-20 pr-30">The Alumni Association at Lambton College is made up of dedicated volunteer alumni who sit on the board and all share a common goal of serving the needs of the alumni community.
-                    </p>
+                    <button class="know-more btn-style" id="All">
+                    All
+                </button>
+                    <button class="know-more btn-style" id="Ronaldo">
+                        Ronaldo
+                    </button>
+                    <button class="know-more btn-style" id="Buffon">
+                            Buffon
+                        </button>
+
                 </div>
+            </div>
 
-                <div class="col-sm-3">
-                    <h4 class="header-style">Navigation</h4>
-                    <ul class="footer-links mt-20">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="course.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="col-sm-3">
-                    <h4 class="header-style">Follow Us</h4>
-                    <div class="mt-20">
-                        <span><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.svg" alt="facebook" width="30"></a></span>
-                        <span><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.svg" alt="instagram" width="30"></a></span>
-                        <span><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.svg" alt="twitter" width="30"></a></span>
+            <div class="col-sm-12">
+
+                <div class="row">
+                    <div class="col-sm-4 All Buffon">
+                        <div class="tab-img-container">
+                            <img src="img/buffon.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 All Ronaldo">
+                        <div class="tab-img-container">
+                            <img src="img/ronaldo.jpg" alt="" class="img-responsive">
+                        </div>
+
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/js.js">
-    </script>
+
+        <div class="footer mt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4 class="header-style">Lambton College</h4>
+                        <p class="text mt-20 mb-20 pr-30">The Alumni Association at Lambton College is made up of dedicated volunteer alumni who sit on the board and all share a common goal of serving the needs of the alumni community.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h4 class="header-style">Navigation</h4>
+                        <ul class="footer-links mt-20">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="course.html">Courses</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h4 class="header-style">Follow Us</h4>
+                        <div class="mt-20">
+                            <span><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.svg" alt="facebook" width="30"></a></span>
+                            <span><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.svg" alt="instagram" width="30"></a></span>
+                            <span><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.svg" alt="twitter" width="30"></a></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/js.js">
+        </script>
+
+        <script>
+            $('#All').addClass('active');
+            $('.btn-style').click(function() {
+                $('.btn-style').removeClass('active');
+                $(this).addClass('active');
+                var id = $(this).attr('id');
+                $('.All').hide();
+                $('.' + id).show();
+            });
+        </script>
 </body>
 
 </html>
