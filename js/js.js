@@ -32,3 +32,14 @@ function complete() {
     clearInterval(timer);
     timer = null;
 }
+
+
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
