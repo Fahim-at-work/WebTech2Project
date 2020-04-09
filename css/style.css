@@ -335,6 +335,18 @@ div h1 span {
     margin-left: 50px;
 }
 
+.banner-container {
+    width: 900px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.about-address {
+    list-style-type: none;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -375,5 +387,16 @@ div h1 span {
     }
     .image-heading {
         font-size: 30px;
+    }
+    .banner-container {
+        width: 345px;
+    }
+    .banner-img {
+        width: 100%;
+        height: 150px;
+    }
+    .sidenav {
+        padding-top: 15px;
+        margin-top: 90px !important;
     }
 }
