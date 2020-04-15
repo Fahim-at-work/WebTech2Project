@@ -347,6 +347,18 @@ div h1 span {
     list-style-type: none;
 }
 
+.img-blog {
+    width: 90%;
+}
+
+.blog-sidebar {
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
