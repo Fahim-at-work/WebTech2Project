@@ -1,9 +1,11 @@
+//mobile view menu
 $(document).ready(function() {
     $('.toggle span').click(function() {
         $('ul').toggleClass('active');
     });
 });
 
+//animation of the header text on home page
 const text = document.querySelector('.image-heading');
 const str_text = text.textContent;
 const split_text = str_text.split("");
@@ -35,6 +37,7 @@ function complete() {
 
 
 
+// About page side navigation bar
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
