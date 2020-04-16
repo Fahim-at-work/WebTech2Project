@@ -1,0 +1,31 @@
+TEAM MEMBERS
+
+Gagandeep Kaur Gill C0765040
+Fahim Shariff C0761036
+Nikhil Samuel C0765028
+
+
+
+PROJECT THEME
+
+Educational Website - Lambton College Website
+
+
+
+GITHUB URL
+
+https://github.com/Fahim-at-work/WebTech2Project
+https://github.com/Fahim-at-work/WebTech2Project/invitations
+
+
+We have created Lambton college website using the following technologies
+HTML, CSS, BootStrap, JavaScript, JQuery.
+
+We Integrated some animations using animate.css and map in the contact page using Leaflet.js
+
+We also added form required field validator in our contact us form.
+
+We have used Javascript and Jquery internally in some pages for better functionality.
+
+The website is completely responsive for mobile view.
+
